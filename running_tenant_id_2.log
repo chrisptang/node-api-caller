@@ -1,0 +1,1122 @@
+====>>>>testing id: 2262
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2262
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2262
+id: 2262 , price in item-center: 2 , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 2262
+====>>>>testing id: 2259
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2259
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2259
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2259 , price in item-center: 44 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2259
+====>>>>testing id: 2258
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2258
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2258
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2258 , price in item-center: 2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2258
+====>>>>testing id: 2254
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2254
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2254
+id: 2254 , price in item-center: 3 , price in old-api: 3 , has-same-price: true
+>>>>====end of id: 2254
+====>>>>testing id: 2253
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2253
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2253
+id: 2253 , price in item-center: 222 , price in old-api: 222 , has-same-price: true
+>>>>====end of id: 2253
+====>>>>testing id: 2252
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2252
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2252
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2252 , price in item-center: 2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2252
+====>>>>testing id: 2251
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2251
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2251
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2251 , price in item-center: 3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2251
+====>>>>testing id: 2250
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2250
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2250
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2250 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2250
+====>>>>testing id: 2249
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2249
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2249
+id: 2249 , price in item-center: 2 , price in old-api: 2 , has-same-price: true
+>>>>====end of id: 2249
+====>>>>testing id: 2246
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2246
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2246
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2246 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2246
+====>>>>testing id: 2245
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2245
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2245
+id: 2245 , price in item-center: 2 , price in old-api: 2 , has-same-price: true
+>>>>====end of id: 2245
+====>>>>testing id: 2244
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2244
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2244
+id: 2244 , price in item-center: 2 , price in old-api: 2 , has-same-price: true
+>>>>====end of id: 2244
+====>>>>testing id: 2243
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2243
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2243
+id: 2243 , price in item-center: 12 , price in old-api: 12 , has-same-price: true
+>>>>====end of id: 2243
+====>>>>testing id: 2242
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2242
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2242
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2242 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2242
+====>>>>testing id: 2230
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2230
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2230
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2230 , price in item-center: 134 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2230
+====>>>>testing id: 2229
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2229
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2229
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2229 , price in item-center: 2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2229
+====>>>>testing id: 2228
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2228
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2228
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2228 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2228
+====>>>>testing id: 2227
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2227
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2227
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2227 , price in item-center: 32 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2227
+====>>>>testing id: 2226
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2226
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2226
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2226 , price in item-center: 11 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2226
+====>>>>testing id: 2225
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2225
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2225
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2225 , price in item-center: 6 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2225
+====>>>>testing id: 2224
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2224
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2224
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2224 , price in item-center: 5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2224
+====>>>>testing id: 2223
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2223
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2223
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2223 , price in item-center: 3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2223
+====>>>>testing id: 2222
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2222
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2222
+id: 2222 , price in item-center: null , price in old-api: 11 , has-same-price: false
+>>>>====end of id: 2222
+====>>>>testing id: 2218
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2218
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2218
+id: 2218 , price in item-center: null , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 2218
+====>>>>testing id: 2217
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2217
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2217
+id: 2217 , price in item-center: null , price in old-api: 222 , has-same-price: false
+>>>>====end of id: 2217
+====>>>>testing id: 2216
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2216
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2216
+id: 2216 , price in item-center: null , price in old-api: 1 , has-same-price: false
+>>>>====end of id: 2216
+====>>>>testing id: 2215
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2215
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2215
+id: 2215 , price in item-center: null , price in old-api: 233 , has-same-price: false
+>>>>====end of id: 2215
+====>>>>testing id: 2214
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2214
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2214
+id: 2214 , price in item-center: null , price in old-api: 6 , has-same-price: false
+>>>>====end of id: 2214
+====>>>>testing id: 2213
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2213
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2213
+id: 2213 , price in item-center: null , price in old-api: 2 , has-same-price: false
+>>>>====end of id: 2213
+====>>>>testing id: 2212
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2212
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2212
+id: 2212 , price in item-center: null , price in old-api: 111 , has-same-price: false
+>>>>====end of id: 2212
+====>>>>testing id: 2211
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2211
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2211
+id: 2211 , price in item-center: null , price in old-api: 1 , has-same-price: false
+>>>>====end of id: 2211
+====>>>>testing id: 2209
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2209
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2209
+id: 2209 , price in item-center: null , price in old-api: 1 , has-same-price: false
+>>>>====end of id: 2209
+====>>>>testing id: 2208
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2208
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2208
+id: 2208 , price in item-center: null , price in old-api: 44 , has-same-price: false
+>>>>====end of id: 2208
+====>>>>testing id: 2207
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2207
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2207
+id: 2207 , price in item-center: null , price in old-api: 33 , has-same-price: false
+>>>>====end of id: 2207
+====>>>>testing id: 2206
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2206
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2206
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2206 , price in item-center: 33 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2206
+====>>>>testing id: 2205
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2205
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2205
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2205 , price in item-center: 22 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2205
+====>>>>testing id: 2204
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2204
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2204
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2204 , price in item-center: 11 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2204
+====>>>>testing id: 2203
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2203
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2203
+id: 2203 , price in item-center: null , price in old-api: 33 , has-same-price: false
+>>>>====end of id: 2203
+====>>>>testing id: 2202
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2202
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2202
+id: 2202 , price in item-center: null , price in old-api: 33 , has-same-price: false
+>>>>====end of id: 2202
+====>>>>testing id: 2200
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2200
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2200
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2200 , price in item-center: 11 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2200
+====>>>>testing id: 2199
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2199
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2199
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2199 , price in item-center: 100 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2199
+====>>>>testing id: 2198
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2198
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2198
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2198 , price in item-center: 98 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2198
+====>>>>testing id: 2197
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2197
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2197
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2197 , price in item-center: 99 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2197
+====>>>>testing id: 2195
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2195
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2195
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2195 , price in item-center: 5.2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2195
+====>>>>testing id: 2194
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2194
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2194
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2194 , price in item-center: 5.3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2194
+====>>>>testing id: 2193
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2193
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2193
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2193 , price in item-center: 5.05 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2193
+====>>>>testing id: 2192
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2192
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2192
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2192 , price in item-center: 2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2192
+====>>>>testing id: 2191
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2191
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2191
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2191 , price in item-center: 5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2191
+====>>>>testing id: 2190
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2190
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2190
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2190 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2190
+====>>>>testing id: 2189
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2189
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2189
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2189 , price in item-center: 8 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2189
+====>>>>testing id: 2188
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2188
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2188
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2188 , price in item-center: 7 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2188
+====>>>>testing id: 2186
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2186
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2186
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2186 , price in item-center: 5.5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2186
+====>>>>testing id: 2185
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2185
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2185
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2185 , price in item-center: 5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2185
+====>>>>testing id: 2182
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2182
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2182
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2182 , price in item-center: 110.02 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2182
+====>>>>testing id: 2181
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2181
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2181
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2181 , price in item-center: 8.92 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2181
+====>>>>testing id: 2180
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2180
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2180
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2180 , price in item-center: 3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2180
+====>>>>testing id: 2179
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2179
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2179
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2179 , price in item-center: 3.6 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2179
+====>>>>testing id: 2178
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2178
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2178
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2178 , price in item-center: 5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2178
+====>>>>testing id: 2172
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2172
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2172
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2172 , price in item-center: 3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2172
+====>>>>testing id: 2171
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2171
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2171
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2171 , price in item-center: 88 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2171
+====>>>>testing id: 2167
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2167
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2167
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2167 , price in item-center: 5 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2167
+====>>>>testing id: 2156
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2156
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2156
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2156 , price in item-center: 11 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2156
+====>>>>testing id: 2155
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2155
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2155
+id: 2155 , price in item-center: null , price in old-api: 11 , has-same-price: false
+>>>>====end of id: 2155
+====>>>>testing id: 2154
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2154
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2154
+id: 2154 , price in item-center: null , price in old-api: 10 , has-same-price: false
+>>>>====end of id: 2154
+====>>>>testing id: 2153
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2153
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2153
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2153 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2153
+====>>>>testing id: 2152
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2152
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2152
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2152 , price in item-center: 111 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2152
+====>>>>testing id: 2151
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2151
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2151
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2151 , price in item-center: 370 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2151
+====>>>>testing id: 2150
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2150
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2150
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2150 , price in item-center: 8 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2150
+====>>>>testing id: 2149
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2149
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2149
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2149 , price in item-center: 6 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2149
+====>>>>testing id: 2148
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2148
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2148
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2148 , price in item-center: 103 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2148
+====>>>>testing id: 2147
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2147
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2147
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2147 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2147
+====>>>>testing id: 2146
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2146
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2146
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2146 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2146
+====>>>>testing id: 2145
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2145
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2145
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2145 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2145
+====>>>>testing id: 2143
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2143
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2143
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2143 , price in item-center: 111 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2143
+====>>>>testing id: 2142
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2142
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2142
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2142 , price in item-center: 3 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2142
+====>>>>testing id: 2141
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2141
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2141
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2141 , price in item-center: 120 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2141
+====>>>>testing id: 2140
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2140
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2140
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2140 , price in item-center: 3289 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2140
+====>>>>testing id: 2139
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2139
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2139
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2139 , price in item-center: 216.48 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2139
+====>>>>testing id: 2138
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2138
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2138
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2138 , price in item-center: 110 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2138
+====>>>>testing id: 2137
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2137
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2137
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2137 , price in item-center: 10 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2137
+====>>>>testing id: 2136
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2136
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2136
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2136 , price in item-center: 20 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2136
+====>>>>testing id: 2135
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2135
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2135
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2135 , price in item-center: 10 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2135
+====>>>>testing id: 2133
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2133
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2133
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2133 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2133
+====>>>>testing id: 2092
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2092
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2092
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2092 , price in item-center: 15 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2092
+====>>>>testing id: 2091
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2091
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2091
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2091 , price in item-center: 34 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2091
+====>>>>testing id: 2090
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2090
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2090
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2090 , price in item-center: 32 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2090
+====>>>>testing id: 2089
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2089
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2089
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2089 , price in item-center: 33 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2089
+====>>>>testing id: 2088
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2088
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2088
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2088 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2088
+====>>>>testing id: 2087
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2087
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2087
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2087 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2087
+====>>>>testing id: 2085
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2085
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2085
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2085 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2085
+====>>>>testing id: 2067
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2067
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2067
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2067 , price in item-center: 300 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2067
+====>>>>testing id: 2064
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2064
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2064
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2064 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2064
+====>>>>testing id: 2057
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2057
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2057
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2057 , price in item-center: 33 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2057
+====>>>>testing id: 2056
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2056
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2056
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2056 , price in item-center: 0.01 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2056
+====>>>>testing id: 2049
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2049
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2049
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2049 , price in item-center: 0.04 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2049
+====>>>>testing id: 2047
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2047
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2047
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2047 , price in item-center: 0.01 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2047
+====>>>>testing id: 2046
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2046
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2046
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2046 , price in item-center: 0.01 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2046
+====>>>>testing id: 2045
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2045
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2045
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2045 , price in item-center: 0.02 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2045
+====>>>>testing id: 2030
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2030
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2030
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2030 , price in item-center: 20 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2030
+====>>>>testing id: 2029
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2029
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2029
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2029 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 2029
+====>>>>testing id: 2024
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2024
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2024
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2024 , price in item-center: 1.76 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2024
+====>>>>testing id: 2019
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2019
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2019
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2019 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2019
+====>>>>testing id: 2018
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2018
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2018
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2018 , price in item-center: 79 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2018
+====>>>>testing id: 2017
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2017
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2017
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2017 , price in item-center: 156.01 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2017
+====>>>>testing id: 2016
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=2016
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=2016
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 2016 , price in item-center: 20.03 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 2016
+====>>>>testing id: 1996
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1996
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1996
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1996 , price in item-center: 10 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1996
+====>>>>testing id: 1995
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1995
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1995
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1995 , price in item-center: 100 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1995
+====>>>>testing id: 1991
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1991
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1991
+id: 1991 , price in item-center: null , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 1991
+====>>>>testing id: 1990
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1990
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1990
+id: 1990 , price in item-center: null , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 1990
+====>>>>testing id: 1989
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1989
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1989
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1989 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1989
+====>>>>testing id: 1981
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1981
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1981
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1981 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1981
+====>>>>testing id: 1963
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1963
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1963
+id: 1963 , price in item-center: null , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 1963
+====>>>>testing id: 1960
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1960
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1960
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1960 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1960
+====>>>>testing id: 1959
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1959
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1959
+id: 1959 , price in item-center: null , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 1959
+====>>>>testing id: 1945
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1945
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1945
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1945 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1945
+====>>>>testing id: 1944
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1944
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1944
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1944 , price in item-center: 1.13 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1944
+====>>>>testing id: 1943
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1943
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1943
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1943 , price in item-center: 13 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1943
+====>>>>testing id: 1937
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1937
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1937
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1937 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1937
+====>>>>testing id: 1932
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1932
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1932
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1932 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1932
+====>>>>testing id: 1931
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1931
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1931
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1931 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1931
+====>>>>testing id: 1930
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1930
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1930
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1930 , price in item-center: 101 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1930
+====>>>>testing id: 1928
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1928
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1928
+id: 1928 , price in item-center: null , price in old-api: 112 , has-same-price: false
+>>>>====end of id: 1928
+====>>>>testing id: 1927
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1927
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1927
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1927 , price in item-center: 104 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1927
+====>>>>testing id: 1926
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1926
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1926
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1926 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1926
+====>>>>testing id: 1923
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1923
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1923
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1923 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1923
+====>>>>testing id: 1922
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1922
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1922
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1922 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1922
+====>>>>testing id: 1921
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1921
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1921
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1921 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1921
+====>>>>testing id: 1920
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1920
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1920
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1920 , price in item-center: 112.09 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1920
+====>>>>testing id: 1916
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1916
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1916
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1916 , price in item-center: 300 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1916
+====>>>>testing id: 1915
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1915
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1915
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1915 , price in item-center: 1.12 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1915
+====>>>>testing id: 1914
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1914
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1914
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1914 , price in item-center: 1 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1914
+====>>>>testing id: 1913
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1913
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1913
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1913 , price in item-center: 2 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1913
+====>>>>testing id: 1912
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1912
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1912
+id: 1912 , price in item-center: null , price in old-api: 12 , has-same-price: false
+>>>>====end of id: 1912
+====>>>>testing id: 1911
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1911
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1911
+id: 1911 , price in item-center: null , price in old-api: 10 , has-same-price: false
+>>>>====end of id: 1911
+====>>>>testing id: 1910
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1910
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1910
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1910 , price in item-center: 100 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1910
+====>>>>testing id: 1909
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1909
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1909
+id: 1909 , price in item-center: null , price in old-api: 5 , has-same-price: false
+>>>>====end of id: 1909
+====>>>>testing id: 1908
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1908
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1908
+id: 1908 , price in item-center: null , price in old-api: 10 , has-same-price: false
+>>>>====end of id: 1908
+====>>>>testing id: 1907
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1907
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1907
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1907 , price in item-center: 9 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1907
+====>>>>testing id: 1905
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1905
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1905
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1905 , price in item-center: 20 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1905
+====>>>>testing id: 1904
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1904
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1904
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1904 , price in item-center: 10 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1904
+====>>>>testing id: 1903
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1903
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1903
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1903 , price in item-center: 20 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1903
+====>>>>testing id: 1878
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1878
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1878
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1878 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1878
+====>>>>testing id: 1875
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1875
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1875
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1875 , price in item-center: 23 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1875
+====>>>>testing id: 1873
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1873
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1873
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1873 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1873
+====>>>>testing id: 1872
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1872
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1872
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1872 , price in item-center: 321 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1872
+====>>>>testing id: 1868
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1868
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1868
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1868 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1868
+====>>>>testing id: 1866
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1866
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1866
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1866 , price in item-center: 111 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1866
+====>>>>testing id: 1865
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1865
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1865
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1865 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1865
+====>>>>testing id: 1864
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1864
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1864
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1864 , price in item-center: 100 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1864
+====>>>>testing id: 1863
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1863
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1863
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1863 , price in item-center: 10 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1863
+====>>>>testing id: 1859
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1859
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1859
+id: 1859 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1859
+====>>>>testing id: 1856
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1856
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1856
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1856 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1856
+====>>>>testing id: 1855
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1855
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1855
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1855 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1855
+====>>>>testing id: 1850
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1850
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1850
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1850 , price in item-center: null , price in old-api: undefined , has-same-price: true
+>>>>====end of id: 1850
+====>>>>testing id: 1842
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1842
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1842
+call api failed: {"code":500,"data":null,"errCode":"","fail":true,"message":"服务器错误","msg":"网络不给力","status":500,"success":false}
+id: 1842 , price in item-center: 12 , price in old-api: undefined , has-same-price: false
+>>>>====end of id: 1842
+====>>>>testing id: 1837
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1837
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1837
+id: 1837 , price in item-center: 13 , price in old-api: 0 , has-same-price: false
+>>>>====end of id: 1837
+====>>>>testing id: 1836
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1836
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1836
+id: 1836 , price in item-center: 10 , price in old-api: 10 , has-same-price: true
+>>>>====end of id: 1836
+====>>>>testing id: 1835
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1835
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1835
+id: 1835 , price in item-center: 999 , price in old-api: 999 , has-same-price: true
+>>>>====end of id: 1835
+====>>>>testing id: 1834
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1834
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1834
+id: 1834 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1834
+====>>>>testing id: 1833
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1833
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1833
+id: 1833 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1833
+====>>>>testing id: 1832
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1832
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1832
+id: 1832 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1832
+====>>>>testing id: 1831
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1831
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1831
+id: 1831 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1831
+====>>>>testing id: 1830
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1830
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1830
+id: 1830 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1830
+====>>>>testing id: 1829
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1829
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1829
+id: 1829 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1829
+====>>>>testing id: 1828
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1828
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1828
+id: 1828 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1828
+====>>>>testing id: 1827
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1827
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1827
+id: 1827 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1827
+====>>>>testing id: 1826
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1826
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1826
+id: 1826 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1826
+====>>>>testing id: 1825
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1825
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1825
+id: 1825 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1825
+====>>>>testing id: 1824
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1824
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1824
+id: 1824 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1824
+====>>>>testing id: 1823
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1823
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1823
+id: 1823 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1823
+====>>>>testing id: 1822
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1822
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1822
+id: 1822 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1822
+====>>>>testing id: 1821
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1821
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1821
+id: 1821 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1821
+====>>>>testing id: 1820
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1820
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1820
+id: 1820 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1820
+====>>>>testing id: 1819
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1819
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1819
+id: 1819 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1819
+====>>>>testing id: 1818
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1818
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1818
+id: 1818 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1818
+====>>>>testing id: 1817
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1817
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1817
+id: 1817 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1817
+====>>>>testing id: 1816
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1816
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1816
+id: 1816 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1816
+====>>>>testing id: 1815
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1815
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1815
+id: 1815 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1815
+====>>>>testing id: 1814
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1814
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1814
+id: 1814 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1814
+====>>>>testing id: 1813
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1813
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1813
+id: 1813 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1813
+====>>>>testing id: 1812
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1812
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1812
+id: 1812 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1812
+====>>>>testing id: 1811
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1811
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1811
+id: 1811 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1811
+====>>>>testing id: 1810
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1810
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1810
+id: 1810 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1810
+====>>>>testing id: 1809
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1809
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1809
+id: 1809 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1809
+====>>>>testing id: 1808
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1808
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1808
+id: 1808 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1808
+====>>>>testing id: 1807
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1807
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1807
+id: 1807 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1807
+====>>>>testing id: 1806
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1806
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1806
+id: 1806 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1806
+====>>>>testing id: 1805
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1805
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1805
+id: 1805 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1805
+====>>>>testing id: 1804
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1804
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1804
+id: 1804 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1804
+====>>>>testing id: 1803
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1803
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1803
+id: 1803 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1803
+====>>>>testing id: 1802
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1802
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1802
+id: 1802 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1802
+====>>>>testing id: 1801
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1801
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1801
+id: 1801 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1801
+====>>>>testing id: 1800
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1800
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1800
+id: 1800 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1800
+====>>>>testing id: 1799
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1799
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1799
+id: 1799 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1799
+====>>>>testing id: 1798
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1798
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1798
+id: 1798 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1798
+====>>>>testing id: 1797
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1797
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1797
+id: 1797 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1797
+====>>>>testing id: 1796
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1796
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1796
+id: 1796 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1796
+====>>>>testing id: 1795
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1795
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1795
+id: 1795 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1795
+====>>>>testing id: 1794
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1794
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1794
+id: 1794 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1794
+====>>>>testing id: 1793
+calling item-center-api: https://devmall.cosfo.cn/home/selectDetail?itemId=1793
+calling old-api: https://dev2mall.cosfo.cn/home/selectDetail?itemId=1793
+id: 1793 , price in item-center: 1 , price in old-api: 1 , has-same-price: true
+>>>>====end of id: 1793
