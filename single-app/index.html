@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        #app {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #search-form {
+            margin-bottom: 20px;
+        }
+
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .product-card p {
+            margin: 0 auto;
+            font-size: smaller;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .score {
+            color: darkviolet;
+        }
+
+        .sku {
+            color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Product Search</h1>
+        <span>Powered by OpenAI embedding model:text-embedding-ada-002</span>
+        <form id="search-form">
+            <input type="text" id="query-input" placeholder="Enter your search query"
+                style="padding: 5px 10px;min-width: 300px;">
+            <button type="submit" style="padding: 5px 10px;">Search</button>
+            <p>
+                <span>Top N:</span>
+                <input type="text" id="top-N" placeholder="Return Top N results" style="padding: 5px 10px;" value="10">
+            </p>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const API_ENDPOINT = "api/embedding/search?query=";
+
+        document.getElementById("search-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            // await getQueryTextAndRender();
+            await openNewPage();
+        });
+
+        async function showLoading() {
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "<p>Loading...</p>"; // Display "Loading..." message
+        }
+
+        // Add event listener for Enter key press
+        document.getElementById("query-input").addEventListener("keydown", async function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                // await getQueryTextAndRender();
+                await openNewPage();
+            }
+        });
+
+        async function openNewPage() {
+            const query = document.getElementById("query-input").value;
+            const topN = document.getElementById("top-N").value || 10;
+            if (!query) {
+                return;
+            }
+            window.location.href = `/?query=${encodeURIComponent(query)}&topN=${topN}`;
+        }
+
+        async function getQueryTextAndRender() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            const topN = urlParams.get('topN') || 10;
+            document.getElementById("top-N").value = topN;
+            if (query) {
+                document.getElementById("query-input").value = query;
+                await showLoading();
+                const response = await fetch(`${API_ENDPOINT}${query}&topN=${topN}`);
+                const data = await response.json();
+                renderResults(data.data);
+            } else {
+                return;
+            }
+        }
+
+        function renderResults(products) {
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            products.forEach(product => {
+                const productCard = document.createElement("div");
+                productCard.classList.add("product-card");
+
+                const img = document.createElement("img");
+                // https://azure.cosfo.cn/upload/fmolehkxv8ps88ebd.jpg
+                // https://azure.summerfarm.net/upload/fmolehkxv8ps88ebd.jpg
+                img.src = (product.img == 'https://azure.summerfarm.net/' ? "https://azure.cosfo.cn/upload/fmolehkxv8ps88ebd.jpg" : product.img);
+
+                const productName = document.createElement("h4");
+                productName.textContent = product.real_name || product.pd_name;
+
+                const name = document.createElement("p");
+                name.textContent = `Alias: ${product.sku_name || product.pd_name}`;
+
+                const weight = document.createElement("p");
+                weight.textContent = `Specification: ${product.weight}`;
+
+                const property_value = document.createElement("p");
+                property_value.textContent = `Property: ${product.property_value}`;
+
+                const brand = document.createElement("p");
+                brand.textContent = `Brand: ${product.brand_name}`;
+
+                const sku = document.createElement("p");
+                sku.className = "sku"
+                sku.textContent = `SKU: ${product.sku}`;
+
+                const category = document.createElement("p");
+                category.textContent = `Category: ${product.parent_front_category_name} > ${product.front_category_name}`;
+
+                const orderCount = document.createElement("p");
+                orderCount.textContent = `Orders: ${product.total_order_count || product.total_order_cnt}`;
+
+                const score = document.createElement("p");
+                score.className = "score"
+                score.textContent = `Embedding Score: ${product.score}`;
+
+                productCard.appendChild(img);
+                productCard.appendChild(productName);
+                productCard.appendChild(sku);
+                productCard.appendChild(name);
+                productCard.appendChild(category);
+                productCard.appendChild(brand);
+                productCard.appendChild(property_value);
+                productCard.appendChild(weight);
+                productCard.appendChild(orderCount);
+                productCard.appendChild(score);
+
+                resultsDiv.appendChild(productCard);
+            });
+        }
+
+        getQueryTextAndRender();
+    </script>
+</body>
+
+</html>

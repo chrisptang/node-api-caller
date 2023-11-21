@@ -8,14 +8,69 @@ const token = 'eyJhbGciOiJIUzUxMiJ9.eyJhY2NvdW50SWQiOjM1MzIsInRlbmFudElkIjoyLCJz
     'WxsLTdkNmQ3YmI5NTktNTljd2giLCJzdG9yZUlkIjo0MjYyLCJleHAiOjE2ODYyMTk5OTl9.tNvZ30xD-ts4NDKHGKf_cx90N1QK_JpO5sigfQTI' +
     'aUDRvP23UnmPHP5CIOTte8giRBNtrEvlXvabB8L9OT_NZQ'
 
-console.log(JSON.stringify(process.argv), new Date())
+console.log(JSON.stringify(process.argv), "started at:", new Date())
 let item_list = [];
 if (process.argv.length == 3) {
     item_list = process.argv[2].split(",");
 }
 
+async function callItemObj(id = 1818) {
+    let url1 = `https://dev2mall.cosfo.cn/home/selectDetail?itemId=${id}`
+    console.log("calling old-api:", url1);
+    url1 = `${url1}&token=${token}`;
+    let res1 = await fetch(url1);
+    let json1 = await res1.json();
+    let resultJson = { id: id, isPriceMatched: false, oldPrice: 0, itemCenterPrice: 0, isApiCallFailed: false };
+    if (!json1.success) {
+        console.warn("call old-api failed:", JSON.stringify(json1));
+        resultJson.isApiCallFailed = true;
+        return resultJson;
+    }
+    let oldItem = json1.data || {};
+
+    let is_onsale = true;
+    if (!oldItem || !oldItem.price || oldItem.price < 0) {
+        console.log("item in old-api has no price:", JSON.stringify(oldItem));
+        is_onsale = false;
+    }
+
+    let url2 = `https://qamall.cosfo.cn/home/selectDetail?itemId=${id}`;
+    console.log("calling item-center-api:", url2);
+    url2 = `${url2}&token=${token}`;
+
+    let res2 = await fetch(url2);
+    let json2 = await res2.json();
+    if (!json2.success) {
+        console.warn("call item-center-api failed:", id, ", result:", JSON.stringify(json2));
+        resultJson.isApiCallFailed = true;
+        return resultJson;
+    }
+    let itemCenterItem = json2.data || {};
+    if (!itemCenterItem || !itemCenterItem.price || itemCenterItem.price < 0) {
+        console.log("item in item-center-api has no price:", JSON.stringify(itemCenterItem), ', compare to old-api-object:', JSON.stringify(oldItem))
+        resultJson.isApiCallFailed = true;
+        return resultJson;
+    } else if (!is_onsale) {
+        console.warn("item is offline:", id, ", but price was presented-in-item-center:", itemCenterItem.price, ", basePrice:", itemCenterItem.basePrice);
+        resultJson.isApiCallFailed = true;
+        return resultJson;
+    }
+
+    console.log("item-id:", id, ", price in old-api:", oldItem.price, ', price in item-center:', itemCenterItem.price,
+        ', has-same-price:', itemCenterItem.price == oldItem.price);
+    if (itemCenterItem.price > 0 && oldItem.price > 0 && itemCenterItem.price != oldItem.price) {
+        console.error("price dismatch, old-api:", JSON.stringify(oldItem), ', new-item-center:', itemCenterItem);
+        resultJson.isApiCallFailed = true;
+        return resultJson;
+    }
+    resultJson.isPriceMatched = true;
+    resultJson.oldPrice = oldItem.price || 0;
+    resultJson.itemCenterPrice = itemCenterItem.price || 0;
+    return resultJson;
+}
+
 async function callItem(id = 1818) {
-    let url = `https://qamall.cosfo.cn/home/selectDetail?itemId=${id}`;
+    let url = `https://dev2mall.cosfo.cn/home/selectDetail?itemId=${id}`;
     console.log("calling old-api:", url);
     url = `${url}&token=${token}`;
     let res = await fetch(url);
@@ -32,7 +87,7 @@ async function callItem(id = 1818) {
         is_onsale = false;
     }
 
-    url = `https://devmall.cosfo.cn/home/selectDetail?itemId=${id}`;
+    url = `https://qamall.cosfo.cn/home/selectDetail?itemId=${id}`;
     console.log("calling item-center-api:", url);
     url = `${url}&token=${token}`;
 
@@ -60,84 +115,26 @@ async function callItem(id = 1818) {
     return true;
 }
 
-// async function callCategory(id = 855) {
-//     console.log("====>>>>testing id:", id);
-//     let url = `https://devmall.cosfo.cn/home/listAll/1/100?classificationId=${id}`;
-//     console.log("calling:", url);
-//     url = `${url}&token=${token}`;
-//     let res = await fetch(url);
-//     let json = await res.json();
-//     let products = getDateFromRes(json);
-//     products = convertProductListToMap(products);
-
-//     console.log("\n\nproducts using item-center:", JSON.stringify(products));
-
-//     url = `https://dev2mall.cosfo.cn/home/listAll/1/100?classificationId=${id}`;
-//     console.log("calling:", url);
-//     url = `${url}&token=${token}`;
-
-//     res = await fetch(url);
-//     json = await res.json();
-//     let oldProducts = getDateFromRes(json);
-
-//     console.log("\n\nproducts using old-cosfo-mall:", JSON.stringify(oldProducts));
-
-//     for (let oldP of oldProducts) {
-//         if (products[`${oldP.id}`]) {
-//             console.log("id:", oldP.id, ", price in item-center:", products[`${oldP.id}`].price, ', price in old-api:', oldP.price, ', has-same-price:', oldP.price == products[`${oldP.id}`].price);
-//         } else {
-//             console.warn("can't find product in item-center:", oldP.id);
-//         }
-//     }
-//     console.log("====>>>>end of id:", id);
-// }
-
-// function getDateFromRes(json) {
-//     if (json && json.data && json.data.list) {
-//         return json.data.list;
-//     }
-//     console.log("invalid response:", JSON.stringify(json));
-//     return [];
-// }
-
-// function convertProductListToMap(list) {
-//     let res = {}
-//     list.forEach(p => { res[`${p.id}`] = p })
-//     return res;
-// }
-
-// let cates = [1, 4, 58, 59, 60, 113, 115, 119, 123, 160, 167, 197, 198, 199, 202, 204, 205, 206, 207, 209, 211, 213, 229, 231, 233, 338,
-//     355, 356, 363, 454, 552, 655, 761, 762, 764, 855, 1078, 1079, 1080, 1096, 1099, 1103, 1104, 1105, 1106, 1143, 1144, 1145, 1149, 1150,
-//     1163, 1165, 1169, 1206];
-
-// for (let c of cates) {
-//     await callCategory(c);
-// }
-
 async function run() {
     let allResult = [];
-    if (item_list && item_list.length > 0) {
-        console.log("running for special list:", JSON.stringify(item_list));
-        for (let item_id of item_list) {
-            console.log("====>>>>testing id:", item_id);
-            let res = await callItem(item_id);
-            allResult[allResult.length] = { item_id, is_price_matched: res }
-            console.log(">>>>====end of id:", item_id);
-        }
-        return;
-    } else {
+    if (!item_list || item_list.length <= 0) {
         let allItems = await fetchAllAvailableItems();
 
-        for (let itemId of allItems) {
-            // console.log(JSON.stringify(itemId));
-            let { item_id } = { ...itemId };
-            console.log("====>>>>testing id:", item_id);
-            let res = await callItem(item_id);
-            allResult[allResult.length] = { item_id, is_price_matched: res }
-            console.log(">>>>====end of id:", item_id);
+        for (let item of allItems) {
+            item_list[item_list.length] = item.item_id;
         }
     }
-    console.log("\n\nEND:\n", JSON.stringify(allResult));
+    console.log("running for list:", JSON.stringify(item_list));
+    for (let item_id of item_list) {
+        console.log("====>>>>testing id:", item_id);
+        let res = await callItemObj(item_id);
+        allResult[allResult.length] = { item_id, is_price_matched: res }
+        console.log(">>>>====end of id:", item_id);
+    }
+    console.log("\n\nEND:\n");
+    for (let result of allResult) {
+        console.log(JSON.stringify(result));
+    }
 }
 
 run();
