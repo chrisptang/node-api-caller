@@ -44,6 +44,16 @@
         .sku {
             color: lightskyblue;
         }
+
+        a.preset-link {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        div#top-query-preset {
+            background-color: #E0E0E0;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -52,19 +62,32 @@
         <h1>Product Search</h1>
         <span>Powered by OpenAI embedding model:text-embedding-ada-002</span>
         <form id="search-form">
-            <input type="text" id="query-input" placeholder="Enter your search query"
-                style="padding: 5px 10px;min-width: 300px;">
-            <button type="submit" style="padding: 5px 10px;">Search</button>
             <p>
+                <input type="text" id="query-input" placeholder="Enter your search query"
+                    style="padding: 5px 10px;min-width: 300px;">
+                <button type="submit" style="padding: 5px 10px;">Search</button>
                 <span>Top N:</span>
                 <input type="text" id="top-N" placeholder="Return Top N results" style="padding: 5px 10px;" value="10">
             </p>
         </form>
+        <div id="top-query-preset">
+            <p>鲜沐Top 100用户搜索词:</p>
+        </div>
         <div id="results"></div>
     </div>
 
     <script>
         const API_ENDPOINT = "api/embedding/search?query=";
+        const topQueries = ['芒果', '草莓', '牛奶', '安佳', '柠檬', '蓝莓', '奶油', '安佳淡奶油', '西瓜', '黄油', '铁塔', '牛油果', '火龙果', '橙子', '榴莲', '葡萄', '马斯卡彭', '糖', '奥利奥', '淡奶油', '凤梨', '青提', '西柚', '百香果', '奶酪', '芝士', '面粉', '树莓', '芋圆', '爱乐薇(铁塔)淡奶油', '蛋糕', '琪雷萨马斯卡彭', '金桔', '肉松', '芋泥', '纯牛奶', '芝士片', '巧克力', '椰果', '蓝风车', '香水柠檬', '蒙特瑞草莓', '椰浆', '奥利奥中号饼干碎(无夹心)', '梨', '奶油奶酪', '广东粗皮香水柠檬', '果糖', '橙', '哈密瓜', '黄柠檬', '石榴', 'TS韩国幼砂糖', '红豆', '燕麦奶', '芋头', '珍珠', '厚椰乳', '气泡水', '越南大青芒', '燕麦', '象牌苏打水', '芒', '椰乳', '砂糖', '白砂糖', '椰子水', '苹果', '王后', '可可粉', 'C味调色芋泥', '柿子', '无花果', '爱护', '蓝风车蓝米吉稀奶油', '爱真', '芒果酱', '山茶花', '炼乳', '蓝莓盒装', '低粉', '苏打水', '晴王青提(阳光玫瑰)', '椰子', '奶粉', 'C味原味波波晶球', '金钻', '秘鲁蓝莓', '越南红心火龙果', '青凯特芒', '安佳黄油', '抹茶', '草莓酱', '鸡蛋', 'kiri奶油奶酪', '菠萝', 'Protag纯牛奶', '糖浆', '低筋面粉', '优诺'];
+        const top_query_preset = document.getElementById("top-query-preset");
+        for (let q of topQueries) {
+            let a = document.createElement("a");
+            a.href = `/?query=${encodeURIComponent(q)}&topN=${100}`;
+            a.target = "_blank"
+            a.innerText = q;
+            a.className = "preset-link"
+            top_query_preset.appendChild(a);
+        }
 
         document.getElementById("search-form").addEventListener("submit", async function (e) {
             e.preventDefault();

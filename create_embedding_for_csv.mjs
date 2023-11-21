@@ -40,6 +40,7 @@ async function processCSV() {
       path: `embedding_of_${csvFilePath}${embedding_file_suffix.length > 0 ? "_" + embedding_file_suffix : ""}.csv`,
       header: Object.keys(resultWithEmbedding[0]).map(key => { return { id: key, title: key } })
     });
+    resultWithEmbedding = resultWithEmbedding.filter(row => row.embedding && row.embedding.length > 10);
     await csvWriter.writeRecords(resultWithEmbedding);
     console.log('CSV file has been written successfully.');
   } catch (error) {
@@ -53,7 +54,15 @@ async function getEmbeddingOfArray(rows = [], columns = [], thread_id = 0) {
   let running = 0;
   for await (const row of rows) {
     // Concatenate the desired columns with a space
-    const input = columns.map(col => row[col]).join(", ");
+    const input = columns.map(col => {
+      if (row[col]) {
+        return `${col}:${row[col]}`;
+      }
+      return null;
+    }).filter(str => str && str.length > 1).join(",");
+    if (!input || input.length <= 1) {
+      continue;
+    }
     console.log(`thread_id:${thread_id}, input:${input}, running:${running++}`);
     // row.embedding = await getEmbeddingForInput(input);
     row.embedding = await getEmbeddingsFromAzure(input);
