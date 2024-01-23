@@ -44,6 +44,9 @@ if (process.argv.length > 2) {
 
 console.log(`prompt: ${prompt}`);
 
+const MD_LINE_BREAK='\n\n'
+const HUMAN_COLOR='<span style="color: blue">', HUMAN_COLOR_END='</span>'
+
 // Override per-request:
 async function call() {
   const stream = await anthropic.completions.create(
@@ -54,13 +57,13 @@ async function call() {
       stream: true,
     }
   );
-  let completions = "", running = 0;
+  let completions = "";
   for await (const completion of stream) {
     completions = `${completions}${completion.completion}`;
     process.stdout.write(`${completion.completion}`);
   }
   process.stdout.write("\n")
-  fs.appendFileSync(fileName, `${Anthropic.HUMAN_PROMPT} ${prompt} ${Anthropic.AI_PROMPT} ${completions}`)
+  fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${new Date().toISOString()} ${MD_LINE_BREAK}${HUMAN_COLOR}${Anthropic.HUMAN_PROMPT} ${prompt}${HUMAN_COLOR_END} ${Anthropic.AI_PROMPT} ${completions}`)
   console.log(`response was wroten into file:${fileName}`)
 }
 
