@@ -78,9 +78,9 @@ async function getEmbeddingForInput(input = '') {
   }
 }
 
-const RESOURCE_NAME = process.env.RESOURCE_NAME;
-const AZURE_API_KEY = process.env.AZURE_API_KEY;
-const DEPLOY_NAME_EMBEDDING = process.env.DEPLOY_NAME_EMBEDDING;
+const RESOURCE_NAME = process.env.XIANMU_RESOURCE_NAME || 'xm-ai';
+const AZURE_API_KEY = process.env.XIANMU_AZURE_API_KEY;
+const DEPLOY_NAME_EMBEDDING = process.env.XIANMU_DEPLOY_NAME_EMBEDDING || 'text-embedding-ada-002';
 const url = `https://${RESOURCE_NAME}.openai.azure.com/openai/deployments/${DEPLOY_NAME_EMBEDDING}/embeddings?api-version=2023-05-15`;
 
 const TEXT_EMBEDDING_CACHE = {};

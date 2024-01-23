@@ -1,14 +1,17 @@
 {
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.10.0",
+    "@azure/openai": "^1.0.0-beta.8",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
+    "https-proxy-agent": "^7.0.2",
     "mammoth": "^1.6.0",
     "ml-matrix": "^6.10.7",
     "mysql2": "^3.3.3",
-    "node-fetch": "^3.3.1",
+    "node-fetch": "^3.3.2",
     "pdfjs-dist": "^3.11.174",
     "turndown": "^7.1.2"
   }
