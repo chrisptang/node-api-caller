@@ -45,7 +45,7 @@ if (process.argv.length > 2) {
 console.log(`prompt: ${prompt}`);
 
 const MD_LINE_BREAK='\n\n'
-const HUMAN_COLOR='<span style="color: blue">', HUMAN_COLOR_END='</span>'
+const HUMAN_COLOR='<p style="border-radius: 5px;padding:2px;background-color: lightskyblue;color:#fff;font-size:larger;font-weight:bolder;">', HUMAN_COLOR_END='</p>'
 
 // Override per-request:
 async function call() {
