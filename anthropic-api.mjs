@@ -23,7 +23,7 @@ if (!fs.existsSync(fileName)) {
   fs.writeFileSync(fileName, '');
 }
 
-const HTTP_PROXY = process.env.HTTP_PROXY;
+const HTTP_PROXY = process.env.HTTP_PROXY || 'http://0.0.0.0:8001';
 
 const proxyAgent = new HttpsProxyAgent(HTTP_PROXY);
 
