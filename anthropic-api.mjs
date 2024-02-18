@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { HttpsProxyAgent } from "https-proxy-agent";
 import fs from 'fs'
+import moment from 'moment'
 import os from 'os'
 import path from 'path'
 
@@ -8,6 +9,7 @@ const TIME_OF_NOW = new Date().toISOString().split("T")[0]
 
 const homeDir = os.homedir();
 const dirToCreate = path.join(homeDir, 'claude');
+const now = moment().format('YYYY-MM-DD HH:mm:ss');
 
 fs.mkdirSync(dirToCreate, { recursive: true }, (error) => {
   if (error) {
@@ -63,7 +65,7 @@ async function call() {
     process.stdout.write(`${completion.completion}`);
   }
   process.stdout.write("\n")
-  fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${new Date().toISOString()} ${MD_LINE_BREAK}${HUMAN_COLOR}${Anthropic.HUMAN_PROMPT} ${prompt}${HUMAN_COLOR_END} ${Anthropic.AI_PROMPT} ${completions}`)
+  fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${now} ${MD_LINE_BREAK}${HUMAN_COLOR}${Anthropic.HUMAN_PROMPT} ${prompt}${HUMAN_COLOR_END} ${Anthropic.AI_PROMPT} ${completions}${MD_LINE_BREAK}`)
   console.log(`response was wroten into file:${fileName}`)
 }
 
