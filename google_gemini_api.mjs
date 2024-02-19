@@ -69,7 +69,7 @@ async function make_gemini_call(data) {
   };
   const postJson = { headers };
   postJson.agent = agent;
-  let url = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
+  let url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
   // console.log("making request to:", url);
   if (data) {
     //POST as json
