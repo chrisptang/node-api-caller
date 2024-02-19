@@ -19,7 +19,7 @@ const rl = readline.createInterface({
   terminal: false
 });
 
-process.stdout.write("Enter prompt to request content from Gemini. Press CLT+C to exit.\n\n")
+process.stdout.write("Enter prompt to request content from Gemini. Press CLT+C to exit.\n")
 
 const TIME_OF_NOW = new Date().toISOString().split("T")[0]
 
@@ -45,46 +45,54 @@ const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY;
 const MD_LINE_BREAK = '\n\n'
 const HUMAN_COLOR = '<p style="border-radius: 5px;padding:2px;background-color: lightskyblue;color:#fff;font-size:larger;font-weight:bolder;">', HUMAN_COLOR_END = '</p>'
 
-let prompt = `Compare the number of grains of sand on Earth and the product of pow(62,10).`;
+const request_body = {
+  "contents": [],
+  "safety_settings": {
+    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+    "threshold": "BLOCK_ONLY_HIGH"
+  },
+  "generation_config": {
+    "temperature": 0.7,
+    "maxOutputTokens": 2048,
+  }
+}
+
+let prompt = "";
 //获取用户在控制台传入的参数，赋值给 prompt
 if (process.argv.length > 2) {
   prompt = process.argv[2];
+  let request_body = buildRequestJsonForPrompt(prompt)
+  make_gemini_call(request_body)
 }
-let request_body = buildRequestJsonForPrompt(prompt)
 
 function buildRequestJsonForPrompt(prompt) {
-  let request_body = {
-    "contents": [
-      {
-        "role": "USER",
-        "parts": { "text": prompt }
-      }
-    ],
-    "safety_settings": {
-      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-      "threshold": "BLOCK_LOW_AND_ABOVE"
-    },
-    "generation_config": {
-      "temperature": 0.3,
-      "maxOutputTokens": 2048,
-    }
-  }
-  return request_body
+  let part = {
+    "role": "user",
+    "parts": [{ "text": prompt }]
+  };
+  request_body.contents.push(part)
+  return request_body;
 }
 
-const now = moment().format('YYYY-MM-DD HH:mm:ss');
+function appendNewResponseToObject(responseText) {
+  let part = {
+    "role": "model",
+    "parts": [{ "text": responseText }]
+  };
+  request_body.contents.push(part)
+  return request_body;
+}
 
 async function make_gemini_call(data) {
+  const now = moment().format('YYYY-MM-DD HH:mm:ss');
+  console.log(JSON.stringify(data));
   const headers = {
     "Content-Type": "application/json",
-
   };
   const postJson = { headers };
   postJson.agent = agent;
   let url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
-  // console.log("making request to:", url);
   if (data) {
-    //POST as json
     postJson.method = "POST";
     postJson.body = JSON.stringify(data);
   }
@@ -114,6 +122,7 @@ async function make_gemini_call(data) {
       }
     }
     process.stdout.write("\n");
+    appendNewResponseToObject(completions)
     fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${now} ${MD_LINE_BREAK}${HUMAN_COLOR}User: ${prompt}${HUMAN_COLOR_END} ${MD_LINE_BREAK}GEMINI:${MD_LINE_BREAK}${completions}${MD_LINE_BREAK}`)
     console.log(`response was wroten into file:${fileName}`)
   } catch (err) {
