@@ -47,10 +47,19 @@ const HUMAN_COLOR = '<p style="border-radius: 5px;padding:2px;background-color: 
 
 const request_body = {
   "contents": [],
-  "safety_settings": {
+  "safety_settings": [{
+    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+    "threshold": "BLOCK_NONE"
+  }, {
     "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-    "threshold": "BLOCK_ONLY_HIGH"
-  },
+    "threshold": "BLOCK_NONE"
+  }, {
+    "category": "HARM_CATEGORY_HATE_SPEECH",
+    "threshold": "BLOCK_NONE"
+  }, {
+    "category": "HARM_CATEGORY_HARASSMENT",
+    "threshold": "BLOCK_NONE"
+  }],
   "generation_config": {
     "temperature": 0.7,
     "maxOutputTokens": 2048,
@@ -85,12 +94,13 @@ function appendNewResponseToObject(responseText) {
 
 async function make_gemini_call(data) {
   const now = moment().format('YYYY-MM-DD HH:mm:ss');
-  console.log(JSON.stringify(data));
   const headers = {
-    "Content-Type": "application/json",
+    "Content-Type": "application/json; charset=utf-8",
+    "Accept": "application/json;charset=UTF-8"
   };
   const postJson = { headers };
   postJson.agent = agent;
+  // streamGenerateContent
   let url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
   if (data) {
     postJson.method = "POST";
@@ -100,7 +110,7 @@ async function make_gemini_call(data) {
   try {
     let response = await fetch(url, postJson);
     let completions = ""
-    process.stdout.write(`requested text:${data.contents[0].parts.text}\n`);
+    process.stdout.write(`requested prompt:${data.contents[data.contents.length - 1].parts[0].text}\n`);
     for await (let chunk of response.body) {
       chunk = chunk.toString();
       chunkOfBody += chunk;
@@ -113,12 +123,16 @@ async function make_gemini_call(data) {
       }
 
       for (let candidates of candidates_list) {
-        if (!candidates.candidates) {
+        if (!candidates?.candidates?.[0]?.content?.parts) {
           process.stderr.write(JSON.stringify(candidates));
           continue;
         }
-        process.stdout.write(candidates.candidates[0].content.parts[0].text);
-        completions = `${completions}${candidates.candidates[0].content.parts[0].text}`
+
+        const text = candidates.candidates[0].content.parts[0]?.text;
+        if (text) {
+          process.stdout.write(text);
+          completions += text;
+        }
       }
     }
     process.stdout.write("\n");
