@@ -13,6 +13,8 @@ import moment from 'moment'
 import path from 'path'
 import readline from 'readline'
 
+process.stdout.setDefaultEncoding('utf8');
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -71,7 +73,7 @@ let prompt = "";
 if (process.argv.length > 2) {
   prompt = process.argv[2];
   let request_body = buildRequestJsonForPrompt(prompt)
-  make_gemini_call(request_body)
+  make_gemini_call_nonchunk(request_body)
 }
 
 function buildRequestJsonForPrompt(prompt) {
@@ -108,11 +110,14 @@ async function make_gemini_call(data) {
   }
   let chunkOfBody = '';
   try {
+    process.stdout.write(`requested prompt:${data.contents[data.contents.length - 1].parts[0].text}\n`);
     let response = await fetch(url, postJson);
     let completions = ""
-    process.stdout.write(`requested prompt:${data.contents[data.contents.length - 1].parts[0].text}\n`);
+    let chunk_times = []
     for await (let chunk of response.body) {
-      chunk = chunk.toString();
+      chunk = chunk.toString('utf8');
+      chunk_times.push(new Date())
+      // process.stdout.write(`chunk:${chunk}`);
       chunkOfBody += chunk;
       let candidates_list = tryParseJsonArray(chunkOfBody)
       if (!candidates_list) {
@@ -136,11 +141,48 @@ async function make_gemini_call(data) {
       }
     }
     process.stdout.write("\n");
+    process.stdout.write(JSON.stringify(chunk_times));
     appendNewResponseToObject(completions)
     fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${now} ${MD_LINE_BREAK}${HUMAN_COLOR}User: ${prompt}${HUMAN_COLOR_END} ${MD_LINE_BREAK}GEMINI:${MD_LINE_BREAK}${completions}${MD_LINE_BREAK}`)
     console.log(`response was wroten into file:${fileName}`)
   } catch (err) {
     console.error(`request error:${err.message}, chunkOfBody:${chunkOfBody}`, err);
+  }
+}
+
+async function make_gemini_call_nonchunk(data) {
+  const now = moment().format('YYYY-MM-DD HH:mm:ss');
+  const headers = {
+    "Content-Type": "application/json; charset=utf-8",
+    "Accept": "application/json;charset=UTF-8"
+  };
+  const postJson = { headers };
+  postJson.agent = agent;
+  let url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro:generateContent?key=${GOOGLE_AI_API_KEY}`
+  if (data) {
+    postJson.method = "POST";
+    postJson.body = JSON.stringify(data);
+  }
+  try {
+    process.stdout.write(`requested prompt:${data.contents[data.contents.length - 1].parts[0].text}\n`);
+    let response = await fetch(url, postJson);
+    response = await response.json();
+    let completions = ""
+    if (!response?.candidates?.[0]?.content?.parts) {
+      process.stderr.write(JSON.stringify(response));
+      return;
+    }
+    for (let part of response.candidates[0].content.parts) {
+      const text = part.text;
+      process.stdout.write(text);
+      completions += text;
+    }
+    process.stdout.write("\n");
+    appendNewResponseToObject(completions)
+    fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${now} ${MD_LINE_BREAK}${HUMAN_COLOR}User: ${prompt}${HUMAN_COLOR_END} ${MD_LINE_BREAK}GEMINI:${MD_LINE_BREAK}${completions}${MD_LINE_BREAK}`)
+    console.log(`response was wroten into file:${fileName}`)
+  } catch (err) {
+    console.error(`request error:${err.message}`, err);
   }
 }
 
@@ -165,7 +207,7 @@ rl.on('line', async (input) => {
     lines.push(input);
     if (lines.length > 0) {
       let post_json = buildRequestJsonForPrompt(lines.join("\n"));
-      await make_gemini_call(post_json)
+      await make_gemini_call_nonchunk(post_json)
       lines = [];
     }
   }
