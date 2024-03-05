@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.10.0",
+    "@anthropic-ai/sdk": "^0.16.1",
     "@azure/openai": "^1.0.0-beta.8",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
