@@ -73,7 +73,8 @@ let prompt = "";
 if (process.argv.length > 2) {
   prompt = process.argv[2];
   let request_body = buildRequestJsonForPrompt(prompt)
-  make_gemini_call_nonchunk(request_body)
+  // make_gemini_call_nonchunk(request_body)
+  make_gemini_call(request_body)
 }
 
 function buildRequestJsonForPrompt(prompt) {
@@ -110,13 +111,12 @@ async function make_gemini_call(data) {
   }
   let chunkOfBody = '';
   try {
-    process.stdout.write(`requested prompt:${data.contents[data.contents.length - 1].parts[0].text}\n`);
+    process.stdout.write(`${MD_LINE_BREAK}User:\n${data.contents[data.contents.length - 1].parts[0].text}`);
     let response = await fetch(url, postJson);
     let completions = ""
-    let chunk_times = []
+    process.stdout.write(`${MD_LINE_BREAK}Gemini:\n`);
     for await (let chunk of response.body) {
       chunk = chunk.toString('utf8');
-      chunk_times.push(new Date())
       // process.stdout.write(`chunk:${chunk}`);
       chunkOfBody += chunk;
       let candidates_list = tryParseJsonArray(chunkOfBody)
@@ -140,8 +140,7 @@ async function make_gemini_call(data) {
         }
       }
     }
-    process.stdout.write("\n");
-    process.stdout.write(JSON.stringify(chunk_times));
+    process.stdout.write(MD_LINE_BREAK);
     appendNewResponseToObject(completions)
     fs.appendFileSync(fileName, `${MD_LINE_BREAK}###${now} ${MD_LINE_BREAK}${HUMAN_COLOR}User: ${prompt}${HUMAN_COLOR_END} ${MD_LINE_BREAK}GEMINI:${MD_LINE_BREAK}${completions}${MD_LINE_BREAK}`)
     console.log(`response was wroten into file:${fileName}`)
@@ -206,8 +205,13 @@ rl.on('line', async (input) => {
     }
     lines.push(input);
     if (lines.length > 0) {
-      let post_json = buildRequestJsonForPrompt(lines.join("\n"));
-      await make_gemini_call_nonchunk(post_json)
+      const new_prompt=lines.join("\n")
+      if(new_prompt.length<=2){
+        return
+      }
+      let post_json = buildRequestJsonForPrompt(new_prompt);
+      // await make_gemini_call_nonchunk(post_json)
+      await make_gemini_call(post_json)
       lines = [];
     }
   }
