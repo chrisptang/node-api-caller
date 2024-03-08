@@ -9,7 +9,8 @@ import readline from 'readline'
 
 const MODEL = process.env.CLAUDE_MODEL || 'claude-3-opus-20240229'
 const MD_LINE_BREAK = '\n\n'
-const HUMAN_COLOR = '<p style="border-radius: 5px;padding:2px;background-color: lightskyblue;color:#fff;font-size:larger;font-weight:bolder;">', HUMAN_COLOR_END = '</p>'
+// const HUMAN_COLOR = '<p style="border-radius: 5px;padding:2px;background-color: lightskyblue;color:#fff;font-size:larger;font-weight:bolder;">', HUMAN_COLOR_END = '</p>'
+const HUMAN_COLOR = '```text\n\n', HUMAN_COLOR_END = '\n\n```'
 
 const TIME_OF_NOW = new Date().toISOString().split("T")[0]
 
