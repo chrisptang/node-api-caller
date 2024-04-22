@@ -163,8 +163,13 @@ async function call(prompt) {
   append_new_message(completions, true)
   session_content_full = `${session_content_full}${MD_LINE_BREAK}### ${now} ${MD_LINE_BREAK}${HUMAN_COLOR}${prompt}${HUMAN_COLOR_END} ${Anthropic.AI_PROMPT} ${completions}${MD_LINE_BREAK}`
   fs.appendFileSync(fileName, session_content_full)
-  await createNewNoteWithIdAndBody(session_content_full, prompt)
-  // console.log(`response was wroten into file:${fileName}`)
+  try {
+    await createNewNoteWithIdAndBody(session_content_full, prompt)
+  } catch (e) {
+    // ignore
+    console.warn(e)
+  }
+
 }
 
 let lines = [];
