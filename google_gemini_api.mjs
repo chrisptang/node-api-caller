@@ -67,8 +67,9 @@ async function make_gemini_call(data) {
   };
   const postJson = { headers };
   postJson.agent = agent;
-  let gemini_version="gemini-1.0-pro"
-  gemini_version="gemini-1.5-pro"
+  let gemini_version = "gemini-1.0-pro"
+  gemini_version = "gemini-1.5-pro"
+  gemini_version = "gemini-1.5-flash"
   let url = `https://generativelanguage.googleapis.com/v1/models/${gemini_version}:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
   // console.log("making request to:", url);
   if (data) {
@@ -94,7 +95,7 @@ async function make_gemini_call(data) {
 
       for (let candidates of candidates_list) {
         process.stdout.write(candidates.candidates[0].content.parts[0].text);
-        completions=`${completions}${candidates.candidates[0].content.parts[0].text}`
+        completions = `${completions}${candidates.candidates[0].content.parts[0].text}`
       }
     }
     process.stdout.write("\n");
