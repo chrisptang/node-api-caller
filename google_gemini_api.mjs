@@ -71,7 +71,7 @@ async function make_gemini_call(data) {
   gemini_version = "gemini-1.5-pro"
   gemini_version = "gemini-1.5-flash"
   let url = `https://generativelanguage.googleapis.com/v1/models/${gemini_version}:streamGenerateContent?key=${GOOGLE_AI_API_KEY}`
-  // console.log("making request to:", url);
+  console.log("making request to:", url);
   if (data) {
     //POST as json
     postJson.method = "POST";

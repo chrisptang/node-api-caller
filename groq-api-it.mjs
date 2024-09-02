@@ -163,6 +163,7 @@ async function call(prompt) {
 
 let lines = [];
 rl.on('line', async (input) => {
+  console.log(input)
   if (input === '\u0003') {
     rl.close();
   } else {

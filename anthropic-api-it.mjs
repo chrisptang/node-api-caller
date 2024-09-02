@@ -7,7 +7,7 @@ import os from 'os'
 import path from 'path'
 import readline from 'readline'
 
-const MODEL = process.env.CLAUDE_MODEL || 'claude-3-opus-20240229'
+const MODEL = process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20240620' || 'claude-3-opus-20240229'
 const MD_LINE_BREAK = '\n\n'
 const HUMAN_COLOR = '\n> ', HUMAN_COLOR_END = '\n\n'
 
@@ -93,7 +93,7 @@ if (!fs.existsSync(fileName)) {
   fs.writeFileSync(fileName, '');
 }
 
-const HTTP_PROXY = process.env.HTTP_PROXY || 'http://0.0.0.0:8001';
+const HTTP_PROXY = process.env.HTTP_PROXY || process.env.http_proxy || 'http://0.0.0.0:8001';
 
 const proxyAgent = new HttpsProxyAgent(HTTP_PROXY);
 
